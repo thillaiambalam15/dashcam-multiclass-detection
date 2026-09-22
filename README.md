@@ -4,6 +4,10 @@ A dashcam object detector built from scratch in PyTorch. A single shared CNN bac
 
 Every architectural and preprocessing choice below is implemented and explained step by step in the notebook. If you want to read the project, the best sarting point is the notebook, after going through this readme file.
 
+**Live demo**: [Try it hosted on Streamlit](https://dashcam-multiclass-detection-bpwqhjvxehjbrogasyg5wx.streamlit.app/)
+
+For local demo - see to the details below on how to run the Flask app included.
+
 ## Problem & approach
 
 Detect and classify 5 categories of road objects — `biker`, `car`, `pedestrian`, `truck`, `trafficLight` in dashcam footage, using one CNN trained by hand. The notebook builds every stage of this pipeline in order: data cleaning → class rebalancing → augmentation → a grid-based detection head → two loss variants (IoU vs EIoU) compared across a pretrained vs randomly-initialized backbone (Model A vs Model B) → evaluation → a real time inference demo.
